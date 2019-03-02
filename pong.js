@@ -84,11 +84,21 @@ function draw() {
   
   // Check if a player scored
   if (puck.x > width) {
-    text("Left player scores a point!", 100, 100);
-    noLoop();
+     text(leftScore*1,100,100,leftScore+=1)
+    
+    // for(var puck.x;puck.x < width;puck.x++);
+    
+    // text("Left player scores a point!", 100, 100);
+    // noLoop();
   }
   if (puck.x < 0) {
-    text("Right player scores a point!", 100, 100);
-    noLoop();
-  }
+      if (puck.x < 0){
+   text(leftScore*1,100,100,rightScore += 1)
+    // text("Right player scores a point!", 100, 100);
+    // noLoop();
+      }
+   // if (puck.x > width){
+   // text(leftScore += 1)
+    
+   }
 }
